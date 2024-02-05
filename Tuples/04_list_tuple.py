@@ -29,3 +29,17 @@ T = tuple(range(1000))
 
 print('List size',sys.getsizeof(L))
 print('Tuple size',sys.getsizeof(T))
+
+a = [1,2,3]
+b = a
+
+a.append(4)
+print(a)
+print(b)
+
+a = (1,2,3)
+b = a
+
+a = a + (4,)
+print(a)
+print(b)
